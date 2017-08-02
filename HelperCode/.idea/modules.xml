@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelperCode.iml" filepath="$PROJECT_DIR$/HelperCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helpercodelib/helpercodelib.iml" filepath="$PROJECT_DIR$/helpercodelib/helpercodelib.iml" />
     </modules>
   </component>
 </project>

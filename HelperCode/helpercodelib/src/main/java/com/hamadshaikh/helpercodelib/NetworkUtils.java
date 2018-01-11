@@ -5,9 +5,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.text.format.Formatter;
+import android.util.Log;
 
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
+import java.net.UnknownHostException;
 import java.util.Enumeration;
 
 /**
@@ -34,6 +37,20 @@ public class NetworkUtils {
         }
         return available;
     }
+    public boolean isDomainUp(String server){
+        String serverDomain="www.google.com";
+        if(server!=null)serverDomain=server;
+        try {
+            InetAddress.getByName(serverDomain);
+            return true;
+        } catch (UnknownHostException e) {
+            return false;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 
 
 }
